@@ -7,6 +7,7 @@ partitioning)"))
 
 (declaim (inline %median3))
 (defun %median3 (x y z order)
+  ;; symbol-macrolet copilot STOP
   (if (funcall order x y)
       (if (funcall order y z)
           y
